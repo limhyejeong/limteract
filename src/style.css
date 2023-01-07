@@ -25,6 +25,12 @@
 }
 @font-face {
   font-family: "faktum";
+  src: url("../src/assets/font/Faktum-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "faktum";
   src: url("../src/assets/font/Faktum-Bold.woff2") format("woff2");
   font-weight: 700;
 }
@@ -33,12 +39,23 @@
   src: url("../src/assets/font/Faktum-ExtraBold.woff2") format("woff2");
   font-weight: 800;
 }
+@font-face {
+  font-family: "faktum";
+  src: url("../src/assets/font/Faktum-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "kirimaru";
+  src: url("../src/assets/font/kirimaru.woff2") format("woff2");
+}
 
 :root {
   font-family: faktum, Inter, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 100%; */
   font-weight: 400;
+  letter-spacing: -0.03rem;
 
   /* color-scheme: light dark; */
   color: #000;
@@ -79,9 +96,15 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+p {
+  letter-spacing: -0.05rem;
+  line-height: 130%;
 }
 
 button {

@@ -36,27 +36,27 @@ window.addEventListener("scroll", () => {
 .template {
   width: 100vw;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: var(--nav-height);
   position: fixed;
-  top: 0;
-  left: 0;
-  // background: #aaa;
   border-bottom: 1px solid #000;
   align-items: center;
   transition: 0.25s;
+
+  .logo {
+    margin-left: 20px;
+  }
 
   nav {
     display: flex;
 
     .nav_link {
       list-style: none;
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
+      margin-right: 20px;
     }
   }
 }
