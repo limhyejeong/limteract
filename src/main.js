@@ -4,12 +4,12 @@ import './style.css'
 import App from './App.vue'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
-import Work from './views/Work.vue'
+import TheHandmaiden from './views/TheHandmaiden.vue'
 
 const routes = [
     { path: '/', component: Home },
     // { path: '/about', component: About },
-    { path: '/work', component: Work },
+    { path: '/the-handmaiden', component: TheHandmaiden },
 ]
 
 const router = createRouter({
