@@ -28,9 +28,8 @@ export default {
       window.addEventListener("load", () => {
         initHeader();
         loader.style.opacity = "0";
+        setTimeout(() => window.scrollTo({ top: 0 }), 100);
       });
-
-      setTimeout(() => window.scrollTo({ top: 0 }), 100);
     });
 
     return {
@@ -69,29 +68,24 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  font-size: 3rem;
-  z-index: 100;
-  background: linear-gradient(45deg, var(--point-color), #ffeb3b);
-  color: #000;
+  background: linear-gradient(135deg, #f9ffea, #fff);
   z-index: 100;
   display: flex;
-  font-weight: 600;
+  font-weight: 200;
   font-size: 5em;
   line-height: 5rem;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   transition: 0.5s;
   pointer-events: none;
   overflow: hidden;
   span {
     color: var(--point-color);
     font-style: oblique;
-    font-weight: 500;
   }
   img {
     width: 300px;
@@ -152,6 +146,10 @@ header {
 
 // 반응형 - 모바일
 @media (max-width: 768px) {
+  #loader {
+    font-size: 3em;
+    line-height: 3rem;
+  }
   header {
     display: none;
   }

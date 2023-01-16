@@ -68,22 +68,32 @@ export default function gravitySkill(canvas) {
         Bodies.rectangle(window.innerWidth / 2, window.innerHeight - 10, window.innerWidth + 2 * offset, 50.5, options),
         Bodies.rectangle(window.innerWidth, 200, 1, render.options.width, options),
         Bodies.rectangle(1, 200, 1, window.innerWidth, options),
-        Bodies.circle(window.innerWidth * 0.3, 0, size, {
+        Bodies.circle(window.innerWidth * 0.3, 0, size * 0.8, {
             render: {
                 sprite: {
-                    texture: '../src/assets/img/f2.png',
+                    texture: '../f2.png',
+                    xScale: scale * 0.8,
+                    yScale: scale * 0.8
+                },
+                chamfer: { radius: 10 }
+            }
+        }),
+        Bodies.circle(window.innerWidth * 0.8, size * 2, size, {
+            render: {
+                sprite: {
+                    texture: '../f7.png',
                     xScale: scale,
                     yScale: scale
                 },
                 chamfer: { radius: 10 }
             }
         }),
-        Bodies.rectangle(window.innerWidth * 0.7, 0, size * 2, size * 2, {
+        Bodies.rectangle(window.innerWidth * 0.7, 0, size * 2, size * 2 * 0.75, {
             render: {
                 sprite: {
-                    texture: '../src/assets/img/f1.png',
-                    xScale: scale,
-                    yScale: scale
+                    texture: '../f1.png',
+                    xScale: scale * 0.75,
+                    yScale: scale * 0.75
                 },
                 chamfer: { radius: 10 }
             }
@@ -91,9 +101,19 @@ export default function gravitySkill(canvas) {
         Bodies.circle(window.innerWidth * 0.5, size * -2, size, {
             render: {
                 sprite: {
-                    texture: '../src/assets/img/f3.png',
+                    texture: '../f3.png',
                     xScale: scale,
                     yScale: scale
+                },
+                chamfer: { radius: 10 }
+            }
+        }),
+        Bodies.circle(window.innerWidth * 0.2, size * -2, size * 0.8, {
+            render: {
+                sprite: {
+                    texture: '../f6.png',
+                    xScale: scale * 0.8,
+                    yScale: scale * 0.8
                 },
                 chamfer: { radius: 10 }
             }
@@ -101,19 +121,19 @@ export default function gravitySkill(canvas) {
         Bodies.circle(window.innerWidth * 0.5, size * -2, size, {
             render: {
                 sprite: {
-                    texture: '../src/assets/img/f4.png',
+                    texture: '../f4.png',
                     xScale: scale,
                     yScale: scale
                 },
                 chamfer: { radius: 10 }
             }
         }),
-        Bodies.circle(window.innerWidth * 0.2, size * -2, size / 2, {
+        Bodies.circle(window.innerWidth * 0.2, size * -2, size / 3, {
             render: {
                 sprite: {
-                    texture: '../src/assets/img/f5.png',
-                    xScale: scale,
-                    yScale: scale
+                    texture: '../f5.png',
+                    xScale: scale / 3,
+                    yScale: scale / 3
                 },
                 chamfer: { radius: 10 }
             }

@@ -504,14 +504,15 @@
   img {
     position: absolute;
     // transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1;
+    // z-index: 1;
   }
 }
 .ess1 {
   :nth-child(4) {
     width: 400px;
     right: 8%;
-    top: 40%;
+    top: 20%;
   }
   :nth-child(5) {
     width: 300px;
@@ -526,7 +527,7 @@
   :nth-child(4) {
     width: 200px;
     right: 5%;
-    top: 30%;
+    top: 20%;
   }
   :nth-child(5) {
     width: 250px;
@@ -541,18 +542,17 @@
   :nth-child(4) {
     width: 300px;
     right: 8%;
-    top: 20%;
+    top: 10%;
   }
   :nth-child(5) {
     width: 220px;
     left: 3%;
-    bottom: 10%;
+    bottom: 0%;
   }
   :nth-child(6) {
     width: 320px;
-    bottom: -30%;
+    bottom: -20%;
     right: 3%;
-    z-index: -1;
   }
 }
 
