@@ -21,7 +21,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 150px 0;
-  background-color: #111;
+  background-color: #000;
   color: #fff;
 
   .sub_title {

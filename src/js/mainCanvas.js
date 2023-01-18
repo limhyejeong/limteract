@@ -53,11 +53,29 @@ export default function mainCanvas() {
     controls.enableDamping = true;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 4;
+
+    let welcomeSize = 25, welcomeY = 25, yearSize = 40;
+
+    if (window.innerWidth < 768) {
+        welcomeSize = 15;
+        welcomeY = 10;
+        yearSize = 30;
+    } else if (window.innerWidth < 1024) {
+        welcomeSize = 20;
+        welcomeY = 15;
+        yearSize = 35;
+    } else {
+        welcomeSize = 25;
+        welcomeY = 20;
+        yearSize = 40;
+    }
+
+
     // Mesh
     fontLoader.load(fontURL, function (font) {
         const geometry = new TextGeometry('Welcome', {
             font: font,
-            size: 25,
+            size: welcomeSize,
             height: 30,
             curveSegments: 32,
             bevelThickness: 10,
@@ -76,14 +94,14 @@ export default function mainCanvas() {
         material.matcap = matcapTexture
 
         const mesh = new THREE.Mesh(geometry, material);
-        mesh.position.y = 25;
+        mesh.position.y = welcomeY;
         scene.add(mesh);
     });
 
     fontLoader.load(fontURL, function (font) {
         const geometry = new TextGeometry('2023', {
             font: font,
-            size: 40,
+            size: yearSize,
             height: 30,
             curveSegments: 32,
             bevelThickness: 10,
