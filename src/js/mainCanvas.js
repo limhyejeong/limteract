@@ -49,7 +49,6 @@ export default function mainCanvas() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
     controls.enablePan = false;
-
     controls.enableDamping = true;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 4;
@@ -60,14 +59,17 @@ export default function mainCanvas() {
         welcomeSize = 15;
         welcomeY = 10;
         yearSize = 30;
+        controls.enabled = false;
     } else if (window.innerWidth < 1024) {
         welcomeSize = 20;
         welcomeY = 15;
         yearSize = 35;
+        controls.enabled = false;
     } else {
         welcomeSize = 25;
         welcomeY = 20;
         yearSize = 40;
+        controls.enabled = true;
     }
 
 

@@ -8,8 +8,15 @@
       >
 
       <div class="footer_link">
-        <a href=""><img src="../assets/img/notion.png" alt="" /> NOTION</a>
-        <a href=""><img src="../assets/img/github.png" alt="" /> GITHUB</a>
+        <a href="https://hyejeonglim.notion.site/" target="_blank"
+          ><img src="../assets/img/notion.png" alt="notion" /> NOTION</a
+        >
+        <a href="https://github.com/limhyejeong" target="_blank"
+          ><img src="../assets/img/github.png" alt="githib" /> GITHUB</a
+        >
+        <a href="https://blog.naver.com/pizzaver" target="_blank"
+          ><img src="../assets/img/blog.png" alt="" /> BLOG</a
+        >
       </div>
     </footer>
   </div>
@@ -66,24 +73,24 @@ footer {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 2rem;
     transition: 0.25s;
     color: #fff;
-
-    &:nth-child(1) {
-      margin-right: 50px;
-    }
+  }
+  .footer_link {
+    display: flex;
+    margin-top: 100px;
 
     img {
       width: 30px;
       height: 30px;
-      margin-right: 5px;
+      margin-right: 10px;
+    }
+
+    a:not(:last-child) {
+      margin-right: 50px;
     }
   }
-}
-.footer_link {
-  display: flex;
-  margin-top: 100px;
 }
 
 @keyframes mail-hover {
@@ -132,6 +139,21 @@ footer {
     }
     .contact_mail {
       font-size: 2rem;
+    }
+
+    .footer_link {
+      // display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      a {
+        font-size: 2rem;
+
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 }
