@@ -32,17 +32,17 @@ export default {
       observer.observe(essential[1]);
       observer.observe(essential[2]);
 
-      let gravityObserver = new IntersectionObserver((elems) => {
-        elems.forEach((el) => {
-          if (el.isIntersecting) {
-            gravitySkill(skillCanvas);
-          } else {
-            skillCanvas.innerHTML = "";
-          }
-        });
-      });
+      // let gravityObserver = new IntersectionObserver((elems) => {
+      //   elems.forEach((el) => {
+      //     if (el.isIntersecting) {
+      //       gravitySkill(skillCanvas);
+      //     } else {
+      //       skillCanvas.innerHTML = "";
+      //     }
+      //   });
+      // });
 
-      gravityObserver.observe(skillCanvas);
+      // gravityObserver.observe(skillCanvas);
 
       let scrollY = window.scrollY;
       let lastScrollY;
@@ -176,8 +176,25 @@ export default {
           </div>
         </a>
 
-        <a class="works_item" href="/the-handmaiden">
+        <a
+          class="works_item"
+          href="https://limhyejeong.github.io/accessibility-survey/"
+          target="_blank"
+        >
           <span class="works_num">02</span>
+          <div class="works_title">
+            Web Accessibility Survey
+            <div class="works_title_kor">웹 접근성 실태 조사 분석 보고서</div>
+          </div>
+          <span class="works_type">Big Data</span>
+          <span class="works_year">©2022</span>
+          <div class="works_img">
+            <img src="../assets/img/work_2.jpg" alt="" />
+          </div>
+        </a>
+
+        <a class="works_item" href="/the-handmaiden">
+          <span class="works_num">03</span>
           <div class="works_title">
             Movie &lt;The Handmaiden&gt; Book Design
             <div class="works_title_kor">영화 &lt;아가씨&gt; 북 디자인</div>
@@ -185,7 +202,7 @@ export default {
           <span class="works_type">Edit Design</span>
           <span class="works_year">©2018</span>
           <div class="works_img">
-            <img src="../assets/img/work_2.jpg" alt="" />
+            <img src="../assets/img/work_3.jpg" alt="" />
           </div>
         </a>
 
@@ -194,7 +211,7 @@ export default {
           href="https://limhyejeong.github.io/canvasgallery/index.html"
           target="_blank"
         >
-          <span class="works_num">03</span>
+          <span class="works_num">04</span>
           <div class="works_title">
             Canvas Gallery
             <div class="works_title_kor">캔버스 갤러리</div>
@@ -267,7 +284,7 @@ export default {
       </svg> -->
     </section>
 
-    <section class="skill"></section>
+    <!-- <section class="skill"></section> -->
 
     <section class="essential ess1">
       <div class="ess_num"><span>1</span></div>

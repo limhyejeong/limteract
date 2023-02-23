@@ -68,14 +68,15 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  // background: linear-gradient(135deg, #f9ffea, #fff);
-  background-color: #000;
+  background: linear-gradient(135deg, #fcfff6, #fff);
+  // background-color: #000;
+  // background-color: #fff;
   z-index: 100;
   display: flex;
   font-weight: 200;
   font-size: 5em;
   line-height: 5rem;
-  color: #fff;
+  // color: #fff;
   text-transform: uppercase;
   flex-direction: column;
   justify-content: center;
