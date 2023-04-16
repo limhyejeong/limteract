@@ -10,11 +10,11 @@ export default {
   components: { Footer },
   setup() {
     function init() {
-      const essentialImg = document.querySelectorAll(".essential img");
       const mainGradient = document.querySelector(".main_gradient");
       const stickers = document.querySelectorAll(".profile_sticker img");
-      const essential = document.querySelectorAll(".essential");
-      const skillCanvas = document.querySelector(".skill");
+      // const essentialImg = document.querySelectorAll(".essential img");
+      // const essential = document.querySelectorAll(".essential");
+      // const skillCanvas = document.querySelector(".skill");
 
       let observer = new IntersectionObserver((elems) => {
         elems.forEach((el) => {
@@ -28,9 +28,9 @@ export default {
         });
       });
 
-      observer.observe(essential[0]);
-      observer.observe(essential[1]);
-      observer.observe(essential[2]);
+      // observer.observe(essential[0]);
+      // observer.observe(essential[1]);
+      // observer.observe(essential[2]);
 
       // let gravityObserver = new IntersectionObserver((elems) => {
       //   elems.forEach((el) => {
@@ -50,24 +50,24 @@ export default {
       let essY = 0;
       let mainGradientY = 80;
 
-      window.addEventListener("scroll", () => {
-        // 아래로 스크롤
-        if (lastScrollY < window.scrollY) {
-          essY -= step;
-          mainGradientY -= step;
-        } else {
-          // 위로 스크롤
-          essY += step;
-          mainGradientY += step;
-        }
+      // window.addEventListener("scroll", () => {
+      //   // 아래로 스크롤
+      //   if (lastScrollY < window.scrollY) {
+      //     essY -= step;
+      //     mainGradientY -= step;
+      //   } else {
+      //     // 위로 스크롤
+      //     essY += step;
+      //     mainGradientY += step;
+      //   }
 
-        essentialImg.forEach((img) => {
-          img.style.transform = `translateY(${essY}px)`;
-        });
+      //   essentialImg.forEach((img) => {
+      //     img.style.transform = `translateY(${essY}px)`;
+      //   });
 
-        mainGradient.style.transform = `translateY(${mainGradientY}px)`;
-        lastScrollY = window.scrollY;
-      });
+      //   mainGradient.style.transform = `translateY(${mainGradientY}px)`;
+      //   lastScrollY = window.scrollY;
+      // });
 
       // 아이콘에 드래그 앤 드롭 함수 부여
       stickers.forEach((sticker) => {
@@ -172,7 +172,27 @@ export default {
           <span class="works_type">Interactive Web</span>
           <span class="works_year">©2022</span>
           <div class="works_img">
-            <img src="../assets/img/work_1.jpg" alt="" />
+            <img
+              src="../assets/img/work_1.jpg"
+              alt="About Indescribable Emotions"
+            />
+          </div>
+        </a>
+
+        <a
+          class="works_item"
+          href="https://limhyejeong.github.io/donuts/"
+          target="_blank"
+        >
+          <span class="works_num">02</span>
+          <div class="works_title">
+            Donuts
+            <div class="works_title_kor">3D 음악감상 웹</div>
+          </div>
+          <span class="works_type">Interactive Web</span>
+          <span class="works_year">©2023</span>
+          <div class="works_img">
+            <img src="../assets/img/work_2.jpg" alt="Donuts" />
           </div>
         </a>
 
@@ -181,7 +201,7 @@ export default {
           href="https://limhyejeong.github.io/accessibility-survey/"
           target="_blank"
         >
-          <span class="works_num">02</span>
+          <span class="works_num">03</span>
           <div class="works_title">
             Web Accessibility Survey
             <div class="works_title_kor">웹 접근성 실태 조사 분석 보고서</div>
@@ -189,12 +209,15 @@ export default {
           <span class="works_type">Big Data</span>
           <span class="works_year">©2022</span>
           <div class="works_img">
-            <img src="../assets/img/work_2.jpg" alt="" />
+            <img
+              src="../assets/img/work_3.jpg"
+              alt="웹 접근성 실태 조사 분석 보고서"
+            />
           </div>
         </a>
 
         <a class="works_item" href="/the-handmaiden">
-          <span class="works_num">03</span>
+          <span class="works_num">04</span>
           <div class="works_title">
             Movie &lt;The Handmaiden&gt; Book Design
             <div class="works_title_kor">영화 &lt;아가씨&gt; 북 디자인</div>
@@ -202,7 +225,10 @@ export default {
           <span class="works_type">Edit Design</span>
           <span class="works_year">©2018</span>
           <div class="works_img">
-            <img src="../assets/img/work_3.jpg" alt="" />
+            <img
+              src="../assets/img/work_4.jpg"
+              alt="Movie The Handmaiden Book Design"
+            />
           </div>
         </a>
 
@@ -211,7 +237,7 @@ export default {
           href="https://limhyejeong.github.io/canvasgallery/index.html"
           target="_blank"
         >
-          <span class="works_num">04</span>
+          <span class="works_num">05</span>
           <div class="works_title">
             Canvas Gallery
             <div class="works_title_kor">캔버스 갤러리</div>
@@ -219,7 +245,7 @@ export default {
           <span class="works_type">Interactive Web</span>
           <span class="works_year">©2021</span>
           <div class="works_img">
-            <img src="../assets/img/work_4.jpg" alt="" />
+            <img src="../assets/img/work_5.jpg" alt="Canvas Gallery" />
           </div>
         </a>
       </div>
@@ -286,7 +312,7 @@ export default {
 
     <!-- <section class="skill"></section> -->
 
-    <section class="essential ess1">
+    <!-- <section class="essential ess1">
       <div class="ess_num"><span>1</span></div>
       <div class="ess_title">&nbsp;Create<br />Experience</div>
       <p>
@@ -314,7 +340,7 @@ export default {
       <img src="../assets/img/ess_3_1.png" alt="" />
       <img src="../assets/img/ess_3_2.png" alt="" />
       <img src="../assets/img/ess_3_3.png" alt="" />
-    </section>
+    </section> -->
 
     <Footer />
   </div>

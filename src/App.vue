@@ -51,11 +51,11 @@ export default {
         <router-link to="/" class="nav_link">HYEJEONG LIM</router-link>
       </div>
 
-      <nav>
+      <!-- <nav>
         <a href="/#works" class="nav_link">WORK</a>
         <a href="/#about" class="nav_link">ABOUT</a>
         <a href="/#contact" class="nav_link">CONTACT</a>
-      </nav>
+      </nav> -->
     </header>
     <RouterView />
   </div>
