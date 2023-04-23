@@ -248,6 +248,42 @@ export default {
             <img src="../assets/img/work_5.jpg" alt="Canvas Gallery" />
           </div>
         </a>
+
+        <a
+          class="works_item"
+          href="https://youtu.be/5kpmk996pUM"
+          target="_blank"
+        >
+          <span class="works_num">06</span>
+          <div class="works_title">
+            Music Shower
+            <div class="works_title_kor"></div>
+          </div>
+          <span class="works_type">사운드&비주얼 인스톨레이션 작품</span>
+          <span class="works_year">©2022</span>
+          <div class="works_img">
+            <img src="../assets/img/work_6.jpg" alt="Music Shower" />
+          </div>
+        </a>
+
+        <a
+          class="works_item"
+          href="https://9oormthon.goorm.io/3_goofy"
+          target="_blank"
+        >
+          <span class="works_num">07</span>
+          <div class="works_title">
+            3rd 9oormthon
+            <div class="works_title_kor">
+              서핑을 위한 해변 추천 및 가이드 앱
+            </div>
+          </div>
+          <span class="works_type">Native App</span>
+          <span class="works_year">©2022</span>
+          <div class="works_img">
+            <img src="../assets/img/work_7.jpg" alt="3rd 9oormthon" />
+          </div>
+        </a>
       </div>
 
       <div class="works_etc">
