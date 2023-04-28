@@ -27,12 +27,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 0;
+  padding: 80px 0;
   background-color: #000;
   color: #fff;
 
   .sub_title {
-    font-size: 6rem;
+    font-size: 4rem;
     // z-index: 1;
     font-weight: 300;
   }
@@ -46,10 +46,11 @@ footer {
   // }
 
   .contact_mail {
-    font-size: 5rem;
+    font-size: 1.5rem;
     text-decoration: underline;
     position: relative;
     cursor: pointer;
+    margin-top: 20px;
 
     &:hover {
       animation: mail-hover 1s ease-in-out;
@@ -73,17 +74,17 @@ footer {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1rem;
     transition: 0.25s;
     color: #fff;
   }
   .footer_link {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
 
     img {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       margin-right: 10px;
     }
 
@@ -125,7 +126,7 @@ footer {
       z-index: 1;
     }
     .contact_mail {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -138,7 +139,7 @@ footer {
       z-index: 1;
     }
     .contact_mail {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
 
     .footer_link {
@@ -147,7 +148,7 @@ footer {
       flex-direction: column;
 
       a {
-        font-size: 2rem;
+        font-size: 1.2rem;
 
         &:not(:last-child) {
           margin-right: 0;

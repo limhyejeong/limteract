@@ -127,7 +127,7 @@ export default {
       <h1 class="sub_title">I Make</h1>
       <div class="main_work_video">
         <a href="https://emotions.kr/" target="_blank">
-          <video autoplay loop muted>
+          <video autoplay loop muted playsinline>
             <source
               src="../assets/video/main_project_video.webm"
               type="video/webm"
@@ -216,7 +216,7 @@ export default {
           </div>
         </a>
 
-        <a class="works_item" href="/the-handmaiden">
+        <!-- <a class="works_item" href="/the-handmaiden">
           <span class="works_num">04</span>
           <div class="works_title">
             Movie &lt;The Handmaiden&gt; Book Design
@@ -230,14 +230,14 @@ export default {
               alt="Movie The Handmaiden Book Design"
             />
           </div>
-        </a>
+        </a> -->
 
         <a
           class="works_item"
           href="https://limhyejeong.github.io/canvasgallery/index.html"
           target="_blank"
         >
-          <span class="works_num">05</span>
+          <span class="works_num">04</span>
           <div class="works_title">
             Canvas Gallery
             <div class="works_title_kor">캔버스 갤러리</div>
@@ -254,12 +254,12 @@ export default {
           href="https://youtu.be/5kpmk996pUM"
           target="_blank"
         >
-          <span class="works_num">06</span>
+          <span class="works_num">05</span>
           <div class="works_title">
             Music Shower
-            <div class="works_title_kor"></div>
+            <div class="works_title_kor">빛과 음악으로 샤워하다</div>
           </div>
-          <span class="works_type">사운드&비주얼 인스톨레이션 작품</span>
+          <span class="works_type">Sound&Visual Installation</span>
           <span class="works_year">©2022</span>
           <div class="works_img">
             <img src="../assets/img/work_6.jpg" alt="Music Shower" />
@@ -271,7 +271,7 @@ export default {
           href="https://9oormthon.goorm.io/3_goofy"
           target="_blank"
         >
-          <span class="works_num">07</span>
+          <span class="works_num">06</span>
           <div class="works_title">
             3rd 9oormthon
             <div class="works_title_kor">
@@ -317,7 +317,10 @@ export default {
         </div>
 
         <div class="profile_info">
-          <div class="profile_img"></div>
+          <div class="profile_img">
+            <img src="../assets/img/profile.png" alt="hyejeong" />
+            <img src="../assets/img/profile_baby.jpg" alt="baby hyejeong" />
+          </div>
           <div class="profile_sticker">
             <img src="../assets/img/heart.png" alt="" />
             <img src="../assets/img/clover.png" alt="" />

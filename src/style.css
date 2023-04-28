@@ -70,6 +70,12 @@
   --point-color: #05cb8e;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   text-decoration: inherit;
