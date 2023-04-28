@@ -300,7 +300,8 @@
 
       .works_img {
         position: absolute;
-        width: 600px;
+        width: 500px;
+        max-width: 100vw;
         height: 400px;
         transform: translate(-50%, -50%) scale(0.8);
         top: 50%;

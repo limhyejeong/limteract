@@ -96,7 +96,7 @@ export default {
           <span>HAPPY NEW YEAR ☺ &nbsp;HAPPY NEW YEAR ☺ &nbsp;</span>
         </div>
       </div>
-      <!-- <div class="copyright">©2023 HYEJEONG LIM</div> -->
+      <div class="copyright">©2023 HYEJEONG LIM</div>
     </section>
 
     <section class="main_intro">
@@ -127,7 +127,7 @@ export default {
       <h1 class="sub_title">I Make</h1>
       <div class="main_work_video">
         <a href="https://emotions.kr/" target="_blank">
-          <video autoplay loop muted playsinline>
+          <video muted autoplay loop playsinline>
             <source
               src="../assets/video/main_project_video.webm"
               type="video/webm"
@@ -144,7 +144,6 @@ export default {
             인간의 표현할 수 없는 복합적인 감정을<br />
             알고리즘을 통해 추상적인 3차원 객체로 시각화하여<br />
             웹 사이트에 아카이브한 프로젝트입니다.
-            <!-- <span>2022 홍익대학교 디자인컨버전스학부 졸업 프로젝트</span> -->
           </p>
           <span
             >School of Design Convergence, Hongik University<br />
