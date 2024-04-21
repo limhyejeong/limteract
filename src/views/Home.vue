@@ -92,8 +92,8 @@ export default {
     <section class="main_cover">
       <div class="main_title">
         <div class="main_title_scroll">
-          <span>HAPPY NEW YEAR ☺ &nbsp;HAPPY NEW YEAR ☺ &nbsp;</span>
-          <span>HAPPY NEW YEAR ☺ &nbsp;HAPPY NEW YEAR ☺ &nbsp;</span>
+          <span>Get inspiration ☺ &nbsp;Creative Experience ☺ &nbsp;</span>
+          <span>Get inspiration ☺ &nbsp;Creative Experience ☺ &nbsp;</span>
         </div>
       </div>
       <div class="copyright">©2023 HYEJEONG LIM</div>
@@ -186,7 +186,7 @@ export default {
           <span class="works_num">02</span>
           <div class="works_title">
             Donuts
-            <div class="works_title_kor">3D 음악감상 웹</div>
+            <div class="works_title_kor">도넛으로 즐기는 음악</div>
           </div>
           <span class="works_type">Interactive Web</span>
           <span class="works_year">©2023</span>
@@ -215,11 +215,11 @@ export default {
           </div>
         </a>
 
-        <!-- <a class="works_item" href="/the-handmaiden">
+        <a class="works_item" href="/the-handmaiden">
           <span class="works_num">04</span>
           <div class="works_title">
-            Movie &lt;The Handmaiden&gt; Book Design
-            <div class="works_title_kor">영화 &lt;아가씨&gt; 북 디자인</div>
+            Movie &lt;The Handmaiden&gt; Book
+            <div class="works_title_kor">영화 &lt;아가씨&gt; 웹북</div>
           </div>
           <span class="works_type">Edit Design</span>
           <span class="works_year">©2018</span>
@@ -229,14 +229,14 @@ export default {
               alt="Movie The Handmaiden Book Design"
             />
           </div>
-        </a> -->
+        </a>
 
         <a
           class="works_item"
           href="https://limhyejeong.github.io/canvasgallery/index.html"
           target="_blank"
         >
-          <span class="works_num">04</span>
+          <span class="works_num">05</span>
           <div class="works_title">
             Canvas Gallery
             <div class="works_title_kor">캔버스 갤러리</div>
@@ -253,7 +253,7 @@ export default {
           href="https://youtu.be/5kpmk996pUM"
           target="_blank"
         >
-          <span class="works_num">05</span>
+          <span class="works_num">06</span>
           <div class="works_title">
             Music Shower
             <div class="works_title_kor">빛과 음악으로 샤워하다</div>
@@ -270,7 +270,7 @@ export default {
           href="https://9oormthon.goorm.io/3_goofy"
           target="_blank"
         >
-          <span class="works_num">06</span>
+          <span class="works_num">07</span>
           <div class="works_title">
             3rd 9oormthon
             <div class="works_title_kor">

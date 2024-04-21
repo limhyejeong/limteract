@@ -42,7 +42,7 @@ export default {
 <template>
   <div id="loader">
     <!-- <img src="./assets/img/bearwalking.gif" alt="" /> -->
-    establish<br />experience<br /><span>for</span> you
+    I'm here for <span>YOU</span>
   </div>
 
   <div class="template">
@@ -68,26 +68,28 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #fcfff6, #fff);
-  // background-color: #000;
-  // background-color: #fff;
+  // background: linear-gradient(135deg, #242521, #000000);
+  background: #000;
   z-index: 100;
   display: flex;
-  font-weight: 200;
-  font-size: 5em;
-  line-height: 5rem;
-  // color: #fff;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 120%;
+  color: #aaa;
+  // text-transform: uppercase;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: 0.5s;
   pointer-events: none;
   overflow: hidden;
+  letter-spacing: -0.1rem;
+  transition: 0.75s opacity ease-in-out;
+
   span {
     color: var(--point-color);
     font-style: oblique;
+    line-height: 100%;
   }
   img {
     width: 300px;

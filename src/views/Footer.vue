@@ -14,9 +14,9 @@
         <a href="https://github.com/limhyejeong" target="_blank"
           ><img src="../assets/img/github.png" alt="githib" /> GITHUB</a
         >
-        <a href="https://blog.naver.com/pizzaver" target="_blank"
+        <!-- <a href="https://blog.naver.com/pizzaver" target="_blank"
           ><img src="../assets/img/blog.png" alt="" /> BLOG</a
-        >
+        > -->
       </div>
     </footer>
   </div>

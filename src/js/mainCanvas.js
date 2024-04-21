@@ -75,12 +75,12 @@ export default function mainCanvas() {
 
     // Mesh
     fontLoader.load(fontURL, function (font) {
-        const geometry = new TextGeometry('Welcome', {
+        const geometry = new TextGeometry('Hello', {
             font: font,
             size: welcomeSize,
             height: 30,
             curveSegments: 32,
-            bevelThickness: 10,
+            bevelThickness: 20,
             bevelSize: 3,
             bevelOffset: 0,
             bevelSegments: 32,
@@ -101,12 +101,12 @@ export default function mainCanvas() {
     });
 
     fontLoader.load(fontURL, function (font) {
-        const geometry = new TextGeometry('2023', {
+        const geometry = new TextGeometry('World', {
             font: font,
             size: yearSize,
             height: 30,
             curveSegments: 32,
-            bevelThickness: 10,
+            bevelThickness: 20,
             bevelSize: 5,
             bevelOffset: 0,
             bevelSegments: 32,
